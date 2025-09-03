@@ -17,7 +17,7 @@ const onClickAdd = () =>{
     });
 
     div.appendChild(p);
-    dispatchEvent.appendChild(button);
+    div.appendChild(button);
 
     li.appendChild(div);
 

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Modern Showcase</title>
+    <meta name="description" content="A premium portfolio showcasing creative works and projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="noise-overlay"></div>
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <header id="header">
+        <nav class="container">
+            <div class="logo">PORTFOLIO<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content reveal">
+                    <h1 class="glitch-text" data-text="Creative Developer">Creative Developer</h1>
+                    <p class="hero-subtitle">Building digital experiences that combine aesthetics with performance.</p>
+                    <div class="hero-cta">
+                        <a href="#works" class="btn btn-primary">View Works</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll Down</span>
+            </div>
+        </section>
+
+        <!-- Works Section -->
+        <section id="works" class="works-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Featured Works</h2>
+                    <p class="section-desc">A selection of my recent projects and experiments.</p>
+                </div>
+                <div class="works-grid">
+                    <!-- Cards will be here -->
+                    <div class="work-card reveal">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800" alt="Project 1">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Web Design</span>
+                            <h3>Ethereal Interface</h3>
+                            <p>A minimalist design system focused on motion and typography.</p>
+                            <a href="#" class="card-link">Explore Case Study <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" style="transition-delay: 0.1s;">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&q=80&w=800" alt="Project 2">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Interaction</span>
+                            <h3>Nova Dashboard</h3>
+                            <p>Real-time data visualization platform for cloud infrastructure.</p>
+                            <a href="#" class="card-link">Explore Case Study <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+
+                    <div class="work-card reveal" style="transition-delay: 0.2s;">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&q=80&w=800" alt="Project 3">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-tag">Development</span>
+                            <h3>Synth Engine</h3>
+                            <p>An interactive audio synthesis tool built with Web Audio API.</p>
+                            <a href="#" class="card-link">Explore Case Study <span class="arrow">→</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image reveal">
+                        <div class="image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800" alt="Profile">
+                            <div class="image-accent"></div>
+                        </div>
+                    </div>
+                    <div class="about-text reveal">
+                        <h2 class="section-title">About Me</h2>
+                        <p>I am a developer and designer based in Tokyo, passionate about creating intuitive and visually stunning digital products. With over 5 years of experience, I blend technical expertise with creative vision.</p>
+                        <div class="skills-grid">
+                            <div class="skill-item">UI/UX Design</div>
+                            <div class="skill-item">Frontend Dev</div>
+                            <div class="skill-item">Motion Graphics</div>
+                            <div class="skill-item">Brand Identity</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-box reveal">
+                    <div class="contact-header">
+                        <h2 class="section-title">Let's Create Together</h2>
+                        <p>Have a project in mind? Reach out and let's start a conversation.</p>
+                    </div>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Project Details" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">PORTFOLIO<span>.</span></div>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+                <p class="copyright">&copy; 2026 Portfolio. Built with passion.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+</body>
+</html>
